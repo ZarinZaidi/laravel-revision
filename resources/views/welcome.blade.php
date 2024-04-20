@@ -4,7 +4,7 @@
 <h1>Home page</h1>
 
 @php
-    $fruits = ['one' => 'apple', 'two' => 'mango', 'three' => 'banana'];
+    $fruits = [];
 @endphp
 
 @include('header', ['names' => $fruits])
