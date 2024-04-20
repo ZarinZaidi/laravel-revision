@@ -10,7 +10,7 @@ class pagecontroller extends Controller
         return "<h1>controller file</h1>";
     }
 
-    public function user2(){
-        return view('users');
+    public function user2(string $id){
+        return view('users', ['id'=> $id]);
     }
 }

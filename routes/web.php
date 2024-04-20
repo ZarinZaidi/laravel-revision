@@ -12,4 +12,4 @@ Route::get('/test', function () {
 });
 
 Route::get('/', [pagecontroller::class, 'user']);
-Route::get('/user', [pagecontroller::class, 'user2']);
+Route::get('/user/{id}', [pagecontroller::class, 'user2']);
