@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\pagecontroller;
+use App\Http\Controllers\testingcontroller;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -13,3 +14,6 @@ Route::get('/test', function () {
 
 Route::get('/', [pagecontroller::class, 'user']);
 Route::get('/user/{id}', [pagecontroller::class, 'user2']);
+
+
+Route::get('/test', testingcontroller::class);
