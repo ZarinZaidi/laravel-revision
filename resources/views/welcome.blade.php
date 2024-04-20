@@ -35,11 +35,14 @@
             <li>{{ $n }}</li>
         @endforeach
     </ul>
+
     <ul>
         @foreach ($name as $n)
             <li>{{ $loop->iteration }} - {{ $n }}</li>
         @endforeach
     </ul>
+    <br>
+
     @foreach ($name as $n)
         {{-- laravel template don't need curly braces around if statement --}}
         @if ($loop->first)
@@ -50,6 +53,18 @@
             <li>{{ $n }}</li>
         @endif
     @endforeach
+    <br>
+
+    @foreach ($name as $n)
+        @if ($loop->even)
+            <li style="color:red">{{ $n }}</li>
+        @elseif ($loop->odd)
+            <li style="color:green">{{ $n }}</li>
+        @else
+            <li>{{ $n }}</li>
+        @endif
+    @endforeach
+
 </body>
 
 </html>
