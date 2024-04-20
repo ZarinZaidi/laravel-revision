@@ -1,12 +1,3 @@
-@php
-    $user = 'sam';
-    $fruits = ['apple', 'orange', 'banana', 'grapes'];
-@endphp
+<h1>Users page</h1>
 
-<script>
-    // take variable in php and we print it in js
-    var data = @json($user);
-    console.log(data);
-    var array = @json($fruits);
-    console.log(array);
-</script>
+<h3>Hello {{ $user }} from {!! $city !!}</h3>
