@@ -40,6 +40,16 @@
             <li>{{ $loop->iteration }} - {{ $n }}</li>
         @endforeach
     </ul>
+    @foreach ($name as $n)
+        {{-- laravel template don't need curly braces around if statement --}}
+        @if ($loop->first)
+            <li style="color:red">{{ $n }}</li>
+        @elseif ($loop->last)
+            <li style="color:green">{{ $n }}</li>
+        @else
+            <li>{{ $n }}</li>
+        @endif
+    @endforeach
 </body>
 
 </html>
