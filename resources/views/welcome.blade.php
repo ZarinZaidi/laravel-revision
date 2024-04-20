@@ -22,6 +22,24 @@
     <br>
     {!! '<h1>hello world</h1>' !!}
     {!! '<script>alert("hello")</script>' !!}
+
+    @php
+        $user = 'Tom & Jerry';
+        $name = ['sam', 'firdaus', 'don'];
+    @endphp
+
+    <p>{{ $user }}</p>
+    {{-- anytime we want to access all the arrays values, we need loop --}}
+    <ul>
+        @foreach ($name as $n)
+            <li>{{ $n }}</li>
+        @endforeach
+    </ul>
+    <ul>
+        @foreach ($name as $n)
+            <li>{{ $loop->iteration }} - {{ $n }}</li>
+        @endforeach
+    </ul>
 </body>
 
 </html>
