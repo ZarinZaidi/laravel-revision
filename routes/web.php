@@ -17,3 +17,7 @@ Route::get('/post', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/test', function () {
+    return view('test');
+});
