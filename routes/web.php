@@ -6,7 +6,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/posts', function () {
+Route::get('/post', function () {
     return view('post');
     // return "<h1>hello world</h1>";
 })->name('mypost');
