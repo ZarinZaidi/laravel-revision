@@ -16,6 +16,5 @@ Route::get('/test', function () {
     ];
     return view('test', [
         'user'=>$names,
-        'city'=>'kl',
     ]);
 });
