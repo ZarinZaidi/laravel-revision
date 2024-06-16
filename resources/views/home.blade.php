@@ -1,8 +1,13 @@
 @extends('welcome')
 
 @section('content')
-    <h1>Home Blade</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, est soluta reiciendis quam facere consequatur
-        nihil labore sunt fugiat rem dicta rerum qui id ipsa! Possimus, nam! Soluta, qui nesciunt.</p>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2 class="mb-4">Home</h2>
+                <p class="lead">This is the home page.</p>
+            </div>
+        </div>
+    </div>
     @include('footer')
 @endsection
