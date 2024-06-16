@@ -19,18 +19,22 @@ SHA: `d9f49e9bb12ed14960e05cb360cb5bead37a49d4`
    git clone <repository-url>
 
 2. Navigate to the project directory:
+   ```bash
    cd <project-directory>
 
 3. Install dependencies:
+   ```bash
    composer install
    npm install
    npm run dev
 
 4. Set up the environment file:
+   ```bash
    cp .env.example .env
    php artisan key:generate
 
 5. Run the project:
+   ```bash
    php artisan serve
 
 6. Access the application in your browser:
